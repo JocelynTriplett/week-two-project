@@ -13,7 +13,7 @@ function question1 () {
     costEach = data[i].price;
     averagePrice += costEach / data.length;
   }
-  console.log("The average price is " + averagePrice.toFixed(2));
+  console.log("The average price is $" + averagePrice.toFixed(2));
 }
 
 
@@ -23,9 +23,11 @@ function question2 () {
   let reasonablyPriced = []
     for (var i = 0; i < data.length; i++) {
       if (data[i].price >= 14 && data[i].price <= 18)
-      reasonablyPriced.push(data[i].title);
+      reasonablyPriced.push(data[i]);
     }
-  console.log(reasonablyPriced);
+    for (var i = 0; i < reasonablyPriced.length; i++) {
+      console.log(reasonablyPriced[i].title + "\n")
+    }
 }
 
 
@@ -46,11 +48,13 @@ function question4 (){
   for (var i = 0; i < data.length; i++) {
     for (var m = 0; m < data[i].materials.length; m++) {
       if (data[i].materials[m] == "wood") {
-        itemsMadeOfWood.push(data[i].title + " is made of wood.");
+        itemsMadeOfWood.push(data[i]);
       }
     }
   }
-  console.log(itemsMadeOfWood);
+  for (var i = 0; i < itemsMadeOfWood.length; i++) {
+    console.log(itemsMadeOfWood[i].title + " is made of wood." + "\n")
+  }
 }
 
 
