@@ -20,7 +20,12 @@ function question1 () {
 
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2 () {
-  // Answer:
+  let reasonablyPriced = []
+  for (var i = 0; i < data.length; i++) {
+    if (data[i].price >= 14 && data[i].price <= 18)
+    reasonablyPriced.push(data[i].title);
+  }
+  console.log(reasonablyPriced)
 }
 
 
