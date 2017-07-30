@@ -13,7 +13,7 @@ function question1 () {
     costEach = data[i].price;
     averagePrice += costEach / data.length;
   }
-  console.log("The average price is " + averagePrice.toFixed(2))
+  console.log("The average price is " + averagePrice.toFixed(2));
 }
 
 
@@ -21,11 +21,11 @@ function question1 () {
 // 2: Show me how to get an array of items that cost between $14.00 and $18.00 USD
 function question2 () {
   let reasonablyPriced = []
-  for (var i = 0; i < data.length; i++) {
-    if (data[i].price >= 14 && data[i].price <= 18)
-    reasonablyPriced.push(data[i].title);
-  }
-  console.log(reasonablyPriced)
+    for (var i = 0; i < data.length; i++) {
+      if (data[i].price >= 14 && data[i].price <= 18)
+      reasonablyPriced.push(data[i].title);
+    }
+  console.log(reasonablyPriced);
 }
 
 
@@ -37,23 +37,21 @@ function question3 () {
       console.log(data[i].title + " costs " + data[i].price + " pounds.");
     }
   }
-
 }
 
 
 // 4: Display a list of all items who are made of wood.
 function question4 (){
   let itemsMadeOfWood = []
-    for (var i = 0; i < data.length; i++) {
-      for (var m = 0; m < data[i].materials.length; m++) {
-        if (data[i].materials[m] == "wood") {
-          itemsMadeOfWood.push(data[i].title + " is made of wood.");
-        }
+  for (var i = 0; i < data.length; i++) {
+    for (var m = 0; m < data[i].materials.length; m++) {
+      if (data[i].materials[m] == "wood") {
+        itemsMadeOfWood.push(data[i].title + " is made of wood.");
       }
-
-      }
-      console.log(itemsMadeOfWood);
     }
+  }
+  console.log(itemsMadeOfWood);
+}
 
 
 // 5: Which items are made of eight or more materials?
@@ -62,13 +60,13 @@ function question5 () {
   let EightOrMoreMaterials = []
   for (var i = 0; i < data.length; i++) {
     if (data[i].materials.length >= 8) {
-      EightOrMoreMaterials.push(data[i])
+      EightOrMoreMaterials.push(data[i]);
     }
   }
   for (var i = 0; i < EightOrMoreMaterials.length; i++) {
     console.log(EightOrMoreMaterials[i].title + " has " + EightOrMoreMaterials[i].materials.length + " materials:" + "\n")
     for (var m = 0; m < EightOrMoreMaterials[i].materials.length; m++) {
-      console.log("- " + EightOrMoreMaterials[i].materials[m] + "\n")
+      console.log("- " + EightOrMoreMaterials[i].materials[m] + "\n");
     }
   }
 }
@@ -80,8 +78,8 @@ function question6 () {
   let MadeByMe = []
   for (var i = 0; i < data.length; i++) {
     if (data[i].who_made == "i_did") {
-      MadeByMe.push(data[i])
+      MadeByMe.push(data[i]);
     }
   }
-  console.log(MadeByMe.length + " items were made by their sellers.")
+  console.log(MadeByMe.length + " items were made by their sellers.");
 }
