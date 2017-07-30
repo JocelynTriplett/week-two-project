@@ -83,5 +83,5 @@ function question6 () {
       MadeByMe.push(data[i])
     }
   }
-  console.log(MadeByMe.length)
+  console.log(MadeByMe.length + " items were made by their sellers.")
 }
