@@ -42,9 +42,18 @@ function question3 () {
 
 
 // 4: Display a list of all items who are made of wood.
-function question4 () {
-  // Answer:
-}
+function question4 (){
+  let itemsMadeOfWood = []
+    for (var i = 0; i < data.length; i++) {
+      for (var m = 0; m < data[i].materials.length; m++) {
+        if (data[i].materials[m] == "wood") {
+          itemsMadeOfWood.push(data[i].title);
+        }
+      }
+
+      }
+      console.log(itemsMadeOfWood);
+    }
 
 
 // 5: Which items are made of eight or more materials?
