@@ -47,7 +47,7 @@ function question4 (){
     for (var i = 0; i < data.length; i++) {
       for (var m = 0; m < data[i].materials.length; m++) {
         if (data[i].materials[m] == "wood") {
-          itemsMadeOfWood.push(data[i].title);
+          itemsMadeOfWood.push(data[i].title + " is made of wood.");
         }
       }
 
