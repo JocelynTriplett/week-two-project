@@ -68,7 +68,7 @@ function question5 () {
   for (var i = 0; i < EightOrMoreMaterials.length; i++) {
     console.log(EightOrMoreMaterials[i].title + " has " + EightOrMoreMaterials[i].materials.length + " materials:" + "\n")
     for (var m = 0; m < EightOrMoreMaterials[i].materials.length; m++) {
-      console.log("-" + EightOrMoreMaterials[i].materials[m] + "\n")
+      console.log("- " + EightOrMoreMaterials[i].materials[m] + "\n")
     }
   }
 }
